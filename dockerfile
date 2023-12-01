@@ -2,6 +2,6 @@ FROM python:latest
 
 WORKDIR /app
 
-COPY main.py .
+COPY python.py .
 
-RUN python main.py
+RUN python python.py

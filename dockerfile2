@@ -1,7 +1,7 @@
-FROM javascript:latest
+FROM node:latest
 
 WORKDIR /app
 
 COPY node.js .
 
-RUN javascript node.js
+RUN node node.js

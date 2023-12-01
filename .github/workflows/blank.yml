@@ -21,9 +21,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: docker build -t ghcr.io/yuhlop/python:1.0 .
-      - run: docker build -t ghcr.io/yuhlop/node:1.0 .
+      - run: docker build -t ghcr.io/yuhlop/python/python:1.0 .
+      - run: docker build -t ghcr.io/yuhlop/node/node:1.0 .
 
-      - run: docker push ghcr.io/yuhlop/python:1.0
-      - run: docker push ghcr.io/yuhlop/node:1.0
+      - run: docker push ghcr.io/yuhlop/python/python:1.0
+      - run: docker push ghcr.io/yuhlop/node/node:1.0
  
